@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayushi Singh — Generative AI & AI Agent Engineer</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Portfolio of Ayushi Singh, Generative AI & AI Agent Engineer based in Noida, India. Specialized in GenAI applications, AI agents, RAG-based systems, Python, NLP, and Deep Learning.">
+    <meta name="keywords" content="Ayushi Singh, Generative AI Engineer, AI Agent Developer, RAG, LangChain, LlamaIndex, Python, Machine Learning, FastApi, Portfolio">
+    <meta name="author" content="Ayushi Singh">
+    
+    <!-- Google Fonts & Devicon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-slate-100 antialiased selection:bg-emerald-500 selection:text-white transition-colors duration-300">
+    
+    <!-- Top Scroll Progress Indicator Bar -->
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+    
+    <!-- Dotted Grid Background Mesh -->
+    <div class="bg-grid"></div>
+    <div class="gradient-mesh"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="nav-container">
+            <a href="#" class="logo font-mono">
+                <span style="color: #3b82f6; text-shadow: 0 0 10px rgba(59, 130, 246, 0.4); font-weight: 800;">&lt;</span>Ayushi<span style="color: #00d2ff; text-shadow: 0 0 10px rgba(0, 210, 255, 0.4); font-weight: 800;">/&gt;</span>
+            </a>
+            
+            <!-- Navigation Pill Links -->
+            <nav class="nav-pill-wrapper">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link active">Home</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#experience" class="nav-link">Education</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Actions: Command Palette & Theme Toggle -->
+            <div class="header-actions">
+                <button class="search-btn font-mono" id="cmdBtn" aria-label="Open command palette">
+                    <i data-lucide="search" class="icon-sm"></i>
+                    <span class="search-text">Search</span>
+                    <kbd class="kbd-kbd">Ctrl+K</kbd>
+                </button>
+                
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark/light theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <ul class="mobile-nav-list">
+            <li><a href="#about" class="mobile-link">Home</a></li>
+            <li><a href="#resume" class="mobile-link">Resume</a></li>
+            <li><a href="#experience" class="mobile-link">Education</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="about" class="hero-section">
+            <div class="section-container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-tag">
+                        <span class="pulse-dot"></span> Open to GenAI & AI Roles
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="hero-intro font-mono">Hi, I'm</span>
+                        <span class="hero-name">Ayushi Singh<span class="text-accent">.</span></span>
+                        <span class="hero-subtitle white-pink-gradient-text">Generative AI & AI Agent Engineer</span>
+                    </h1>
+                    
+                    <!-- Console whoami Line -->
+                    <div class="console-line font-mono">
+                        <span class="text-accent">$</span>
+                        <span class="console-label">whoami</span>
+                        <span class="console-separator">—</span>
+                        <span class="console-typing" id="whoami-type"></span><span class="cursor-block"></span>
+                    </div>
+                    
+                    <p class="hero-description">
+                        Generative AI & AI Agent Engineer based in Noida, India. B.Tech graduate in Computer Science and Artificial Intelligence with hands-on experience building GenAI applications, autonomous AI agents, and RAG pipelines using LangChain, LlamaIndex, Vector DBs, FastAPI, and Python.
+                    </p>
+                    
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">View My Projects <i data-lucide="arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+                    </div>
+                    
+                    <!-- Contact / Social Quick Links -->
+                    <div class="hero-socials">
+                        <a href="https://github.com/Ayushisingh1120" target="_blank" class="social-icon" title="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/ayushi-singh-5813ab215" target="_blank" class="social-icon" title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:777ayushisingh@gmail.com" class="social-icon" title="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.99 5.72a2 2 0 0 1-2.01 0L2 7"></path></svg>
+                        </a>
+                        <a href="tel:+917007278937" class="social-icon" title="Phone">
+                            <i data-lucide="phone" style="width: 18px; height: 18px;"></i>
+                        </a>
+                        <span class="location-tag font-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg> Noida, India
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Hero Photo visual -->
+                <div class="hero-visual">
+                    <div class="profile-glow-bg"></div>
+                    <div class="profile-border-gradient">
+                        <div class="profile-image-container">
+                            <img src="avatar.jpg" onerror="this.onerror=null; this.src='avatar.svg';" alt="Ayushi Singh profile photo" class="profile-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-down-arrow">
+                <span class="font-mono uppercase tracking-widest text-2xs text-slate-500">Scroll</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 animate-bounce"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+            </div>
+        </section>
+
+        <!-- Stats Counter Section -->
+        <section class="stats-section">
+            <div class="section-container stats-grid">
+                <div class="stat-card">
+                    <div class="stat-num text-gradient"><span>3+</span></div>
+                    <p class="stat-label">GenAI & ML Projects</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num text-gradient"><span>97%</span></div>
+                    <p class="stat-label">Model Accuracy (Guardio)</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num text-gradient"><span>7.1</span></div>
+                    <p class="stat-label">B.Tech CGPA</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num text-gradient"><span>4+</span></div>
+                    <p class="stat-label">Key Certifications</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Marquee Section -->
+        <section class="marquee-section">
+            <div class="marquee-container fade-overlay">
+                <div class="marquee-track">
+                    <!-- Set 1 -->
+                    <span class="marquee-item"><i class="devicon-python-plain colored"></i> Python</span>
+                    <span class="marquee-item"><i data-lucide="bot" style="color: #3b82f6;"></i> LLM Agents</span>
+                    <span class="marquee-item"><i data-lucide="layers" style="color: #00d2ff;"></i> RAG Systems</span>
+                    <span class="marquee-item"><i class="devicon-fastapi-plain colored"></i> FastAPI</span>
+                    <span class="marquee-item"><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+                    <span class="marquee-item"><i class="devicon-tensorflow-original colored"></i> TensorFlow</span>
+                    <span class="marquee-item"><i data-lucide="database" style="color: #10b981;"></i> Pinecone & ChromaDB</span>
+                    <span class="marquee-item"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+                    <span class="marquee-item"><i class="devicon-react-original colored"></i> React.js</span>
+                    <span class="marquee-item"><i class="devicon-git-plain colored"></i> Git & GitHub</span>
+                    <!-- Set 2 (Duplicate for seamless loop) -->
+                    <span class="marquee-item"><i class="devicon-python-plain colored"></i> Python</span>
+                    <span class="marquee-item"><i data-lucide="bot" style="color: #3b82f6;"></i> LLM Agents</span>
+                    <span class="marquee-item"><i data-lucide="layers" style="color: #00d2ff;"></i> RAG Systems</span>
+                    <span class="marquee-item"><i class="devicon-fastapi-plain colored"></i> FastAPI</span>
+                    <span class="marquee-item"><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+                    <span class="marquee-item"><i class="devicon-tensorflow-original colored"></i> TensorFlow</span>
+                    <span class="marquee-item"><i data-lucide="database" style="color: #10b981;"></i> Pinecone & ChromaDB</span>
+                    <span class="marquee-item"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+                    <span class="marquee-item"><i class="devicon-react-original colored"></i> React.js</span>
+                    <span class="marquee-item"><i class="devicon-git-plain colored"></i> Git & GitHub</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume-section section-padding">
+            <div class="section-container">
+                <div class="section-header-custom">
+                    <p class="font-mono custom-section-tag"><span class="tag-line"></span>Credentials</p>
+                    <h2 class="custom-section-title">Professional <span class="blue-gradient-text">Resume</span></h2>
+                    <p class="custom-section-desc">View or download my full credentials detailing my certifications, projects, and academic background.</p>
+                </div>
+                
+                <div class="resume-showcase-grid">
+                    <!-- Left: Highlights Cards -->
+                    <div class="resume-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon"><i data-lucide="brain"></i></div>
+                            <div>
+                                <h4>Generative AI & Agentic Systems</h4>
+                                <p>LLM Agents, Tool Calling, Text-to-SQL, RAG pipelines, LangChain, LlamaIndex, Vector Databases, and Ollama.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon"><i data-lucide="cpu"></i></div>
+                            <div>
+                                <h4>Machine Learning & NLP</h4>
+                                <p>TensorFlow, PyTorch, Scikit-learn, Sentence Transformers, BERT Fine-tuning, and SMOTE for imbalanced classification.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon"><i data-lucide="layers"></i></div>
+                            <div>
+                                <h4>Backend, APIs & Databases</h4>
+                                <p>FastAPI, RESTful APIs, PostgreSQL, MySQL, MongoDB, OpenAI & Claude APIs, React.js, and Tailwind CSS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Call to Action Card -->
+                    <div class="resume-cta-card">
+                        <div class="resume-file-icon">
+                            <i data-lucide="file-text"></i>
+                        </div>
+                        <h3>Ayushi_Singh_Resume.pdf</h3>
+                        <p class="file-size font-mono">PDF Document — B.Tech CSE (AI)</p>
+                        <div class="resume-cta-buttons">
+                            <a href="./resume.pdf" target="_blank" class="btn btn-primary">
+                                <i data-lucide="external-link"></i> View Fullscreen
+                            </a>
+                            <a href="./resume.pdf" download="Ayushi_Singh_Resume.pdf" class="btn btn-outline">
+                                <i data-lucide="download"></i> Download Copy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience & Timeline Section -->
+        <section id="experience" class="experience-section section-padding bg-alt">
+            <div class="section-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <p class="font-mono custom-section-tag"><span class="tag-line"></span>Career & Studies</p>
+                    <h2 class="custom-section-title">Education & <span class="text-gradient">Experience</span></h2>
+                    <p class="custom-section-desc">My academic background in Computer Science & AI and hands-on technical initiatives.</p>
+                </div>
+                
+                <div class="split-timeline-grid reveal-on-scroll reveal-delay-200">
+                    <!-- Left Column: Education -->
+                    <div class="timeline-column-wrapper">
+                        <h3 class="timeline-column-title font-mono"><i data-lucide="graduation-cap"></i> Education</h3>
+                        <div class="timeline-container-custom">
+                            <div class="timeline-line-custom"></div>
+                            
+                            <!-- B.Tech Degree -->
+                            <div class="timeline-row-custom">
+                                <div class="timeline-logo-circle" style="overflow: hidden; padding: 0; border: none; background: none; box-shadow: none;">
+                                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                                        <rect width="40" height="40" rx="10" fill="#2563eb"/>
+                                        <path d="M20 9L9 15L20 21L28.5 16.36V24H31V15L20 9Z" fill="white"/>
+                                        <path d="M13.5 18.5V23.5C13.5 25.5 16.5 27 20 27C23.5 27 26.5 25.5 26.5 23.5V18.5L20 22L13.5 18.5Z" fill="white" opacity="0.8"/>
+                                    </svg>
+                                </div>
+                                <div class="timeline-card-custom">
+                                    <div class="timeline-card-header">
+                                        <div>
+                                            <div class="card-role-title-row">
+                                                <h3>B.Tech in Computer Science & Artificial Intelligence</h3>
+                                            </div>
+                                            <p class="company-name">Pranveer Singh Institute of Technology</p>
+                                        </div>
+                                        <div class="timeline-card-meta font-mono">
+                                            <span><i data-lucide="calendar"></i> Dec 2022 – May 2026</span>
+                                            <span><i data-lucide="map-pin"></i> Kanpur, India</span>
+                                        </div>
+                                    </div>
+                                    <div class="edu-details-row">
+                                        <span class="edu-grade font-mono">CGPA: 7.1 / 10.0</span>
+                                        <p style="margin-top: 8px;">Core specialized studies covering Artificial Intelligence, Neural Networks, Natural Language Processing, Data Structures, OOP, and Database Systems.</p>
+                                    </div>
+                                    <div class="timeline-skills">
+                                        <span class="badge-skill">Artificial Intelligence</span>
+                                        <span class="badge-skill">Machine Learning</span>
+                                        <span class="badge-skill">NLP</span>
+                                        <span class="badge-skill">Data Structures</span>
+                                        <span class="badge-skill">DBMS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Extracurricular & Leadership -->
+                    <div class="timeline-column-wrapper">
+                        <h3 class="timeline-column-title font-mono"><i data-lucide="award"></i> Leadership & Activities</h3>
+                        <div class="timeline-container-custom">
+                            <div class="timeline-line-custom"></div>
+                            
+                            <!-- Item 1: Startup Charcha -->
+                            <div class="timeline-row-custom">
+                                <div class="timeline-logo-circle" style="overflow: hidden; padding: 0; border: none; background: none; box-shadow: none;">
+                                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                                        <rect width="40" height="40" rx="10" fill="#8b5cf6"/>
+                                        <path d="M12 28L20 12L28 28H12Z" stroke="white" stroke-width="2.5" stroke-linejoin="round"/>
+                                        <circle cx="20" cy="23" r="2" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="timeline-card-custom">
+                                    <div class="timeline-card-header">
+                                        <div>
+                                            <div class="card-role-title-row">
+                                                <h3>Startup Charcha</h3>
+                                                <span class="active-badge font-mono">Participant</span>
+                                            </div>
+                                            <p class="company-name">Entrepreneurship Forum</p>
+                                        </div>
+                                        <div class="timeline-card-meta font-mono">
+                                            <span><i data-lucide="sparkles"></i> Innovation Session</span>
+                                        </div>
+                                    </div>
+                                    <ul class="timeline-bullets">
+                                        <li>Engaged in entrepreneurship-focused masterclasses with seasoned startup founders and tech industry professionals.</li>
+                                        <li>Explored product-market fit strategies, agile deployment models, and scalable GenAI-driven business architectures.</li>
+                                    </ul>
+                                    <div class="timeline-skills">
+                                        <span class="badge-skill">Entrepreneurship</span>
+                                        <span class="badge-skill">Innovation</span>
+                                        <span class="badge-skill">Product Strategy</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 2: Technical Event Coordinator -->
+                            <div class="timeline-row-custom">
+                                <div class="timeline-logo-circle" style="overflow: hidden; padding: 0; border: none; background: none; box-shadow: none;">
+                                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                                        <rect width="40" height="40" rx="10" fill="#00d2ff"/>
+                                        <circle cx="20" cy="20" r="8" stroke="white" stroke-width="2"/>
+                                        <path d="M20 12V20L25 25" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="timeline-card-custom">
+                                    <div class="timeline-card-header">
+                                        <div>
+                                            <div class="card-role-title-row">
+                                                <h3>Technical Event Organizing Team</h3>
+                                                <span class="active-badge font-mono">Coordinator</span>
+                                            </div>
+                                            <p class="company-name">PSIT Campus Events</p>
+                                        </div>
+                                        <div class="timeline-card-meta font-mono">
+                                            <span><i data-lucide="users"></i> College Lead</span>
+                                        </div>
+                                    </div>
+                                    <ul class="timeline-bullets">
+                                        <li>Assisted in planning, coordinating, and managing collegiate technical events, hackathons, seminars, and industry guest lectures.</li>
+                                        <li>Fostered team collaboration, participant logistics, and technical setup for smooth execution across college symposiums.</li>
+                                    </ul>
+                                    <div class="timeline-skills">
+                                        <span class="badge-skill">Leadership</span>
+                                        <span class="badge-skill">Communication</span>
+                                        <span class="badge-skill">Problem Solving</span>
+                                        <span class="badge-skill">Event Management</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Deep Tabbed Cards) -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="section-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <p class="font-mono custom-section-tag"><span class="tag-line"></span>Selected Work</p>
+                    <h2 class="custom-section-title">Projects with <span class="text-gradient">Depth</span></h2>
+                    <p class="custom-section-desc">Explore the engineering challenges, system architectures, and implementations from my resume.</p>
+                </div>
+                
+                <div class="tabbed-projects-wrapper reveal-on-scroll reveal-delay-200">
+                    
+                    <!-- Project 1: CareCRM AI -->
+                    <div class="tab-project-card" id="project-carecrm">
+                        <div class="tab-project-header">
+                            <div>
+                                <span class="proj-num font-mono">01</span>
+                                <span class="badge-project-type font-mono">GenAI & AI Agents</span>
+                                <h3>CareCRM AI — AI CRM & Customer Support Copilot</h3>
+                                <p class="proj-subtitle">AI-powered customer support copilot integrating CRM data and knowledge bases for context-aware responses.</p>
+                            </div>
+                            <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                                <a href="https://github.com/Ayushisingh1120" target="_blank" class="proj-code-link font-mono" style="border-color: var(--accent-color); color: var(--accent-color); background-color: rgba(59, 130, 246, 0.08);">
+                                    <i data-lucide="github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Nav tabs -->
+                        <div class="project-tab-nav font-mono">
+                            <button class="tab-trigger active" data-tab="overview">Overview</button>
+                            <button class="tab-trigger" data-tab="thinking">The Thinking</button>
+                            <button class="tab-trigger" data-tab="design">System Design</button>
+                            <button class="tab-trigger" data-tab="tech">Tech & Stats</button>
+                        </div>
+                        
+                        <!-- Tab Content Panes -->
+                        <div class="project-tab-content">
+                            <!-- Pane 1: Overview -->
+                            <div class="tab-pane active" data-pane="overview">
+                                <p class="pane-intro">Built an AI-powered customer support copilot integrating CRM records and organizational knowledge bases to provide context-aware responses to complex customer queries.</p>
+                                <ul class="pane-bullets">
+                                    <li>Implemented RAG, semantic vector search, and LLM-based response generation to retrieve customer and product information while mitigating hallucinations.</li>
+                                    <li>Developed tool-calling workflows with FastAPI and CRM REST APIs to retrieve records, summarize tickets, and automate support actions.</li>
+                                    <li>Designed session memory and confidence-based human handoff triggers when query uncertainty exceeds safe thresholds.</li>
+                                </ul>
+                            </div>
+                            <!-- Pane 2: Thinking -->
+                            <div class="tab-pane" data-pane="thinking">
+                                <h4>The Challenge: Hallucination Mitigation & Trust in CRM</h4>
+                                <p class="pane-text">In enterprise customer support, false or hallucinated responses directly degrade customer trust. A simple chat LLM might promise non-existent refunds or incorrect order dates. I tackled this by decoupling knowledge retrieval into strict verified sources: ChromaDB vector search for product policy documentation, and deterministic CRM REST API endpoints for customer transactional state. Furthermore, a confidence threshold classifier evaluates response faithfulness—if confidence is insufficient, it synthesizes an incident summary and seamlessly transfers the context to human support agents.</p>
+                            </div>
+                            <!-- Pane 3: Design -->
+                            <div class="tab-pane" data-pane="design">
+                                <h4>Agentic Tool-Calling Architecture</h4>
+                                <p class="pane-text">The system operates as an asynchronous FastAPI pipeline. Incoming customer messages pass into an intent classification node with function-calling capabilities. Depending on the intent, the copilot executes tool calls against the CRM REST API (fetching order logs, ticket histories) or executes cosine similarity queries on the vector knowledge base. State is tracked via conversation memory buffers, and output responses are validated against safety and domain rules before delivery.</p>
+                            </div>
+                            <!-- Pane 4: Tech -->
+                            <div class="tab-pane" data-pane="tech">
+                                <div class="tech-stats-detailed" style="display: flex; flex-direction: column; gap: 14px; margin-top: 6px;">
+                                    <div class="tech-detail-item" style="border-left: 2px solid var(--accent-color); padding-left: 14px;">
+                                        <h5 class="font-mono" style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-color); margin-bottom: 4px; letter-spacing: 0.5px;">Core Stack</h5>
+                                        <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">Python 3.11+, FastAPI, LLM (OpenAI / Claude API), RAG Architecture.</p>
+                                    </div>
+                                    <div class="tech-detail-item" style="border-left: 2px solid var(--accent-secondary); padding-left: 14px;">
+                                        <h5 class="font-mono" style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-secondary); margin-bottom: 4px; letter-spacing: 0.5px;">Vector Engine & Search</h5>
+                                        <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">ChromaDB / Pinecone Vector Store, Sentence Embeddings, Cosine Similarity Filtering.</p>
+                                    </div>
+                                    <div class="tech-detail-item" style="border-left: 2px solid var(--accent-color); padding-left: 14px;">
+                                        <h5 class="font-mono" style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-color); margin-bottom: 4px; letter-spacing: 0.5px;">Integrations</h5>
+                                        <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">CRM REST APIs, Ticket Summarization, Tool/Function Calling Workflows, Human Handoff Fallbacks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: EnterpriseIQ -->
+                    <div class="tab-project-card" id="project-enterpriseiq">
+                        <div class="tab-project-header">
+                            <div>
+                                <span class="proj-num font-mono">02</span>
+                                <span class="badge-project-type font-mono">RAG & Document Intelligence</span>
+                                <h3>EnterpriseIQ — Enterprise RAG Knowledge Assistant</h3>
+                                <p class="proj-subtitle">Document intelligence system for querying enterprise knowledge bases using Retrieval-Augmented Generation.</p>
+                            </div>
+                            <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                                <a href="https://github.com/Ayushisingh1120" target="_blank" class="proj-code-link font-mono" style="border-color: var(--accent-color); color: var(--accent-color); background-color: rgba(59, 130, 246, 0.08);">
+                                    <i data-lucide="github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Nav tabs -->
+                        <div class="project-tab-nav font-mono">
+                            <button class="tab-trigger active" data-tab="overview">Overview</button>
+                            <button class="tab-trigger" data-tab="thinking">The Thinking</button>
+                            <button class="tab-trigger" data-tab="design">System Design</button>
+                            <button class="tab-trigger" data-tab="tech">Tech & Stats</button>
+                        </div>
+                        
+                        <!-- Tab Content Panes -->
+                        <div class="project-tab-content">
+                            <!-- Pane 1: Overview -->
+                            <div class="tab-pane active" data-pane="overview">
+                                <p class="pane-intro">Built a comprehensive document intelligence platform enabling enterprise teams to query multi-format internal repositories using Retrieval-Augmented Generation (RAG).</p>
+                                <ul class="pane-bullets">
+                                    <li>Implemented document ingestion, chunking strategies, embedding generation, semantic retrieval, and reranking to elevate context relevance.</li>
+                                    <li>Developed a FastAPI-based backend supporting multi-document search, conversational queries, and source-cited responses.</li>
+                                    <li>Evaluated response quality using relevance and faithfulness metrics to minimize hallucinations.</li>
+                                </ul>
+                            </div>
+                            <!-- Pane 2: Thinking -->
+                            <div class="tab-pane" data-pane="thinking">
+                                <h4>The Challenge: Context Fragmentation in Large PDFs</h4>
+                                <p class="pane-text">Standard chunking schemes either slice sentences midway or overload the prompt with uninformative background noise. I implemented a sliding-window recursive chunking strategy with semantic boundaries and overlap to preserve full conceptual paragraphs. To bridge the gap between initial dense retrieval and synthesis, I added a cross-encoder reranking stage that re-scores the top 10 candidate chunks down to the 3 most precise passages, ensuring the LLM is fed purely actionable information with exact page/section citations.</p>
+                            </div>
+                            <!-- Pane 3: Design -->
+                            <div class="tab-pane" data-pane="design">
+                                <h4>Two-Stage Ingestion & Retrieval Pipeline</h4>
+                                <p class="pane-text">1. Ingestion Pipeline: Parsers extract raw text from PDFs and Markdown, split them via RecursiveCharacterTextSplitter, generate dense vector embeddings via HuggingFace Sentence Transformers, and store them in FAISS/ChromaDB with metadata headers.<br>2. Retrieval & Generation Pipeline: User prompt -> Dense vector search -> Cross-encoder reranker -> Citation-grounded prompt compilation -> LLM generation with explicit source links.</p>
+                            </div>
+                            <!-- Pane 4: Tech -->
+                            <div class="tab-pane" data-pane="tech">
+                                <div class="tech-stats-detailed" style="display: flex; flex-direction: column; gap: 14px; margin-top: 6px;">
+                                    <div class="tech-detail-item" style="border-left: 2px solid var(--accent-color); padding-left: 14px;">
+                                        <h5 class="font-mono" style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-color); margin-bottom: 4px; letter-spacing: 0.5px;">Frameworks & Ingestion</h5>
+                                        <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">Python, LangChain, Sentence Transformers (all-MiniLM-L6-v2), PyPDF / Unstructured.</p>
+                                    </div>
+                                    <div class="tech-detail-item" style="border-left: 2px solid var(--accent-secondary); padding-left: 14px;">
+                                        <h5 class="font-mono" style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-secondary); margin-bottom: 4px; letter-spacing: 0.5px;">Vector Stores & Indexing</h5>
+                                        <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">FAISS index, ChromaDB, Cross-Encoder Reranking, Metadata Filtering.</p>
+                                    </div>
+                                    <div class="tech-detail-item" style="border-left: 2px solid var(--accent-color); padding-left: 14px;">
+                                        <h5 class="font-mono" style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-color); margin-bottom: 4px; letter-spacing: 0.5px;">Backend & Evaluation</h5>
+                                        <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">FastAPI async server, Source Citation Generator, RAG Faithfulness & Relevance benchmarking.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Guardio -->
+                    <div class="tab-project-card" id="project-guardio">
+                        <div class="tab-project-header">
+                            <div>
+                                <span class="proj-num font-mono">03</span>
+                                <span class="badge-project-type font-mono">Machine Learning & Deep Learning</span>
+                                <h3>Guardio — Credit Card Fraud Detection Pipeline</h3>
+                                <p class="proj-subtitle">End-to-end fraud detection pipeline tackling extreme class imbalance for financial transaction classification.</p>
+                            </div>
+                            <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                                <a href="https://github.com/Ayushisingh1120" target="_blank" class="proj-code-link font-mono" style="border-color: var(--accent-color); color: var(--accent-color); background-color: rgba(59, 130, 246, 0.08);">
+                                    <i data-lucide="github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Nav tabs -->
+                        <div class="project-tab-nav font-mono">
+                            <button class="tab-trigger active" data-tab="overview">Overview</button>
+                            <button class="tab-trigger" data-tab="thinking">The Thinking</button>
+                            <button class="tab-trigger" data-tab="design">System Design</button>
+                            <button class="tab-trigger" data-tab="tech">Tech & Stats</button>
+                        </div>
+                        
+                        <!-- Tab Content Panes -->
+                        <div class="project-tab-content">
+                            <!-- Pane 1: Overview -->
+                            <div class="tab-pane active" data-pane="overview">
+                                <p class="pane-intro">Built an end-to-end fraud detection machine learning pipeline using Logistic Regression on highly imbalanced transaction data, achieving 97% overall accuracy and 92% recall on fraudulent cases.</p>
+                                <ul class="pane-bullets">
+                                    <li>Applied SMOTE (Synthetic Minority Over-sampling Technique) and feature scaling during preprocessing to strengthen rare-event classification.</li>
+                                    <li>Evaluated model using Precision-Recall curves, ROC-AUC, and Confusion Matrices to minimize costly false negatives.</li>
+                                    <li>Engineered preprocessing modules using Scikit-learn, Pandas, and NumPy to streamline live transaction batch scoring.</li>
+                                </ul>
+                            </div>
+                            <!-- Pane 2: Thinking -->
+                            <div class="tab-pane" data-pane="thinking">
+                                <h4>The Challenge: Extreme 0.17% Class Imbalance</h4>
+                                <p class="pane-text">In fraud detection, 99.8% of transactions are legitimate. A trivial baseline that flags everything as genuine achieves 99.8% accuracy but 0% fraud detection utility. To solve this, I applied SMOTE exclusively to the training split, synthesizing minority instances along k-nearest neighbor line segments while preventing data leakage into the test set. By tuning probability decision thresholds, I boosted fraud recall to 92% while maintaining high precision.</p>
+                            </div>
+                            <!-- Pane 3: Design -->
+                            <div class="tab-pane" data-pane="design">
+                                <h4>ML Data Pipeline Lifecycle</h4>
+                                <p class="pane-text">1. Ingestion & Preprocessing: Handling PCA-transformed transaction features, robust scaling of transaction amount and time deltas.<br>2. Resampling: SMOTE balancing on training folds.<br>3. Estimator: Regularized Logistic Regression with cross-validation.<br>4. Evaluation: Analyzing Precision-Recall trade-offs, F1-scores, and ROC-AUC metrics to ensure resilience against adversarial patterns.</p>
+                            </div>
+                            <!-- Pane 4: Tech -->
+                            <div class="tab-pane" data-pane="tech">
+                                <div class="tech-stats-grid">
+                                    <div class="tech-stat-item"><span class="font-mono">Python 3.11</span> - Scientific computation core</div>
+                                    <div class="tech-stat-item"><span class="font-mono">Scikit-learn</span> - Logistic Regression & Preprocessing</div>
+                                    <div class="tech-stat-item"><span class="font-mono">SMOTE</span> - Imbalanced-learn synthetic oversampling</div>
+                                    <div class="tech-stat-item"><span class="font-mono">Pandas & NumPy</span> - Vectorized data wrangling</div>
+                                    <div class="tech-stat-item"><span class="font-mono">Performance</span> - 97% Accuracy & 92% Fraud Recall</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Matrix Section -->
+        <section id="skills" class="skills-section section-padding bg-alt">
+            <div class="section-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <p class="font-mono custom-section-tag"><span class="tag-line"></span>Core Stack</p>
+                    <h2 class="custom-section-title">Skills & <span class="text-gradient">Frameworks</span></h2>
+                    <p class="custom-section-desc">My technical toolkit for building Generative AI agents, RAG workflows, and machine learning systems.</p>
+                </div>
+                
+                <div class="skills-custom-grid reveal-on-scroll reveal-delay-200">
+                    <!-- Category 1: Generative AI & AI Agents -->
+                    <div class="skills-card">
+                        <div class="skills-card-header font-mono">
+                            <i data-lucide="bot" style="color: #3b82f6;"></i>
+                            <h3>GenAI & Agents</h3>
+                        </div>
+                        <ul class="skills-card-list">
+                            <li><i data-lucide="cpu" style="color: #00d2ff;"></i> LLM Agents</li>
+                            <li><i data-lucide="code-2" style="color: #38bdf8;"></i> Tool / Function Calling</li>
+                            <li><i data-lucide="database" style="color: #60a5fa;"></i> Text-to-SQL</li>
+                            <li><i data-lucide="layers" style="color: #818cf8;"></i> RAG Systems</li>
+                            <li><i data-lucide="message-square" style="color: #a78bfa;"></i> Prompt Engineering</li>
+                            <li><i data-lucide="boxes" style="color: #c084fc;"></i> LangChain & LlamaIndex</li>
+                            <li><i data-lucide="cylinder" style="color: #06b6d4;"></i> Pinecone & ChromaDB</li>
+                            <li><i data-lucide="sliders" style="color: #10b981;"></i> Fine-tuning (BERT)</li>
+                            <li><i data-lucide="terminal" style="color: #f59e0b;"></i> Ollama</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2: Machine Learning & Deep Learning -->
+                    <div class="skills-card">
+                        <div class="skills-card-header font-mono">
+                            <i data-lucide="brain" style="color: #8b5cf6;"></i>
+                            <h3>ML & Deep Learning</h3>
+                        </div>
+                        <ul class="skills-card-list">
+                            <li><i data-lucide="network" style="color: #3b82f6;"></i> Machine Learning</li>
+                            <li><i data-lucide="languages" style="color: #00d2ff;"></i> NLP</li>
+                            <li><i class="devicon-tensorflow-original colored"></i> TensorFlow</li>
+                            <li><i class="devicon-pytorch-original colored"></i> PyTorch</li>
+                            <li><i data-lucide="cpu" style="color: #ef4444;"></i> Keras</li>
+                            <li><i data-lucide="chart-pie" style="color: #f59e0b;"></i> Scikit-learn</li>
+                            <li><i data-lucide="share-2" style="color: #10b981;"></i> Sentence Transformers</li>
+                            <li><i data-lucide="check-circle" style="color: #8b5cf6;"></i> Model Evaluation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3: Programming Languages -->
+                    <div class="skills-card">
+                        <div class="skills-card-header font-mono">
+                            <i data-lucide="code" style="color: #00d2ff;"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <ul class="skills-card-list">
+                            <li><i class="devicon-python-plain colored"></i> Python</li>
+                            <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+                            <li><i data-lucide="database" style="color: #38bdf8;"></i> SQL</li>
+                            <li><i class="devicon-html5-plain colored"></i> HTML5</li>
+                            <li><i class="devicon-css3-plain colored"></i> CSS3</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 4: Backend & APIs -->
+                    <div class="skills-card">
+                        <div class="skills-card-header font-mono">
+                            <i data-lucide="server" style="color: #10b981;"></i>
+                            <h3>Backend & Frontend</h3>
+                        </div>
+                        <ul class="skills-card-list">
+                            <li><i class="devicon-fastapi-plain colored"></i> FastAPI</li>
+                            <li><i data-lucide="network" style="color: #00d2ff;"></i> REST APIs</li>
+                            <li><i data-lucide="sparkles" style="color: #3b82f6;"></i> OpenAI & Claude API</li>
+                            <li><i class="devicon-postman-plain colored"></i> Postman</li>
+                            <li><i class="devicon-react-original colored"></i> React.js</li>
+                            <li><i class="devicon-tailwindcss-original colored"></i> Tailwind CSS</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 5: Databases & Analytics -->
+                    <div class="skills-card">
+                        <div class="skills-card-header font-mono">
+                            <i data-lucide="database" style="color: #f59e0b;"></i>
+                            <h3>Databases & Data</h3>
+                        </div>
+                        <ul class="skills-card-list">
+                            <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
+                            <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+                            <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
+                            <li><i class="devicon-pandas-plain colored"></i> Pandas & NumPy</li>
+                            <li><i data-lucide="bar-chart-2" style="color: #ef4444;"></i> Matplotlib & Seaborn</li>
+                            <li><i data-lucide="pie-chart" style="color: #f59e0b;"></i> Power BI & Tableau</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 6: Tools & Core Strengths -->
+                    <div class="skills-card">
+                        <div class="skills-card-header font-mono">
+                            <i data-lucide="wrench" style="color: #06b6d4;"></i>
+                            <h3>Tools & Coursework</h3>
+                        </div>
+                        <ul class="skills-card-list">
+                            <li><i class="devicon-git-plain colored"></i> Git</li>
+                            <li><i class="devicon-github-original" style="color: #ffffff;"></i> GitHub</li>
+                            <li><i class="devicon-vscode-plain colored"></i> VS Code</li>
+                            <li><i data-lucide="binary" style="color: #38bdf8;"></i> Data Structures</li>
+                            <li><i data-lucide="box" style="color: #818cf8;"></i> OOP & DBMS</li>
+                            <li><i data-lucide="cloud" style="color: #f59e0b;"></i> AWS Basics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Repositories Section -->
+        <section id="other-repositories" class="other-repos-section section-padding">
+            <div class="section-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <p class="font-mono custom-section-tag"><span class="tag-line"></span>GitHub Repos</p>
+                    <h2 class="custom-section-title">Other <span class="text-gradient">Repositories</span></h2>
+                    <p class="custom-section-desc">More code repositories and projects focused on GenAI and machine learning.</p>
+                </div>
+                
+                <div class="repos-grid reveal-on-scroll reveal-delay-200">
+                    <!-- Repo 1: CareCRM AI -->
+                    <div class="repo-card">
+                        <div class="repo-card-header">
+                            <i data-lucide="folder" class="repo-icon"></i>
+                            <div class="repo-links">
+                                <a href="https://github.com/Ayushisingh1120" target="_blank" title="View Source Code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="repo-title">CareCRM-AI</h3>
+                        <p class="repo-desc">AI CRM and customer support copilot combining semantic RAG retrieval, CRM tool calling, and human handoff.</p>
+                        <div class="repo-tags font-mono">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>RAG</span>
+                            <span>ChromaDB</span>
+                        </div>
+                    </div>
+
+                    <!-- Repo 2: EnterpriseIQ -->
+                    <div class="repo-card">
+                        <div class="repo-card-header">
+                            <i data-lucide="folder" class="repo-icon"></i>
+                            <div class="repo-links">
+                                <a href="https://github.com/Ayushisingh1120" target="_blank" title="View Source Code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="repo-title">EnterpriseIQ-RAG</h3>
+                        <p class="repo-desc">Enterprise knowledge assistant featuring recursive document chunking, FAISS index, and source citation verification.</p>
+                        <div class="repo-tags font-mono">
+                            <span>Python</span>
+                            <span>LangChain</span>
+                            <span>FAISS</span>
+                            <span>Transformers</span>
+                        </div>
+                    </div>
+
+                    <!-- Repo 3: Guardio Fraud Detection -->
+                    <div class="repo-card">
+                        <div class="repo-card-header">
+                            <i data-lucide="folder" class="repo-icon"></i>
+                            <div class="repo-links">
+                                <a href="https://github.com/Ayushisingh1120" target="_blank" title="View Source Code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="repo-title">Guardio-Fraud-Detection</h3>
+                        <p class="repo-desc">End-to-end fraud classification pipeline solving high class imbalance with SMOTE and achieving 92% recall.</p>
+                        <div class="repo-tags font-mono">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>SMOTE</span>
+                            <span>Pandas</span>
+                        </div>
+                    </div>
+
+                    <!-- Repo 4: Text-to-SQL Agent -->
+                    <div class="repo-card">
+                        <div class="repo-card-header">
+                            <i data-lucide="folder" class="repo-icon"></i>
+                            <div class="repo-links">
+                                <a href="https://github.com/Ayushisingh1120" target="_blank" title="View Source Code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="repo-title">Text-to-SQL-Agent</h3>
+                        <p class="repo-desc">Natural language to SQL agent using LLM function calling, database schema introspection, and syntax verification.</p>
+                        <div class="repo-tags font-mono">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                            <span>LLM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Certifications -->
+        <section class="achievements-section section-padding">
+            <div class="section-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <p class="font-mono custom-section-tag"><span class="tag-line"></span>Merits & Credentials</p>
+                    <h2 class="custom-section-title">Certifications & <span class="text-gradient">Highlights</span></h2>
+                    <p class="custom-section-desc">Formal accreditations and extracurricular highlights from my academic journey.</p>
+                </div>
+                
+                <div class="merits-container reveal-on-scroll reveal-delay-200">
+                    <!-- Certifications Column -->
+                    <div class="merits-column">
+                        <h3 class="merits-col-title font-mono"><i data-lucide="scroll"></i> Certifications</h3>
+                        <div class="certs-custom-list">
+                            <div class="cert-item-custom">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <span class="cert-org font-mono">Artificial Intelligence</span>
+                                        <h4 style="margin: 0; color: var(--text-primary);">Generative AI Prompting & Agents</h4>
+                                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Designing, refining, and optimizing prompts for effective interaction with GenAI models.</p>
+                                    </div>
+                                    <i data-lucide="award" style="color: var(--accent-color); width: 20px; height: 20px;"></i>
+                                </div>
+                            </div>
+
+                            <div class="cert-item-custom">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <span class="cert-org font-mono">Programming</span>
+                                        <h4 style="margin: 0; color: var(--text-primary);">Python Programming Foundations</h4>
+                                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Foundational Python mastery — variables, conditionals, loops, functions, and data structures.</p>
+                                    </div>
+                                    <i data-lucide="award" style="color: var(--accent-color); width: 20px; height: 20px;"></i>
+                                </div>
+                            </div>
+
+                            <div class="cert-item-custom">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <span class="cert-org font-mono">Databases</span>
+                                        <h4 style="margin: 0; color: var(--text-primary);">SQL Database Operations</h4>
+                                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Demonstrated proficiency in writing SQL queries, filtering data, joins, and database operations.</p>
+                                    </div>
+                                    <i data-lucide="award" style="color: var(--accent-color); width: 20px; height: 20px;"></i>
+                                </div>
+                            </div>
+
+                            <div class="cert-item-custom">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <span class="cert-org font-mono">Frontend Development</span>
+                                        <h4 style="margin: 0; color: var(--text-primary);">HTML5 Web Technologies</h4>
+                                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">HTML5 fundamentals, semantic elements, forms, tables, multimedia, and webpage structure.</p>
+                                    </div>
+                                    <i data-lucide="award" style="color: var(--accent-color); width: 20px; height: 20px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements & Extracurricular Column -->
+                    <div class="merits-column">
+                        <h3 class="merits-col-title font-mono"><i data-lucide="award"></i> Key Merits & Activities</h3>
+                        <div class="merits-list">
+                            <div class="merit-item">
+                                <i data-lucide="sparkles" class="merit-icon"></i>
+                                <div>
+                                    <h4>Startup Charcha Participant</h4>
+                                    <p>Selected to participate in Startup Charcha, interacting directly with startup founders and exploring entrepreneurial AI ventures.</p>
+                                </div>
+                            </div>
+                            <div class="merit-item">
+                                <i data-lucide="calendar" class="merit-icon"></i>
+                                <div>
+                                    <h4>Technical Event Organizing</h4>
+                                    <p>Assisted in coordinating departmental technical symposiums, coding sessions, seminars, and guest lectures at PSIT.</p>
+                                </div>
+                            </div>
+                            <div class="merit-item">
+                                <i data-lucide="check-circle-2" class="merit-icon"></i>
+                                <div>
+                                    <h4>Hands-On GenAI Development</h4>
+                                    <p>Built functional prototypes across RAG systems, tool-calling agents, vector database indexing, and imbalanced ML pipelines.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section-custom section-padding bg-alt">
+            <div class="section-container contact-grid-custom">
+                <div class="contact-left reveal-on-scroll">
+                    <p class="font-mono custom-section-tag"><span class="tag-line"></span>Connect</p>
+                    <h2 class="custom-section-title">Let's <span class="text-gradient">Collaborate</span></h2>
+                    <p class="contact-text-desc">Actively seeking roles in Generative AI Engineering, AI Agent Development, and Machine Learning. Feel free to reach out via email or phone!</p>
+                    
+                    <div class="contact-details-custom">
+                        <div class="detail-item-custom">
+                            <i data-lucide="mail" class="text-emerald-500"></i>
+                            <div>
+                                <span class="detail-label font-mono">Email</span>
+                                <a href="mailto:777ayushisingh@gmail.com" class="detail-val">777ayushisingh@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="detail-item-custom">
+                            <i data-lucide="phone" class="text-emerald-500"></i>
+                            <div>
+                                <span class="detail-label font-mono">Call / WhatsApp</span>
+                                <a href="tel:+917007278937" class="detail-val">+91-7007278937</a>
+                            </div>
+                        </div>
+                        <div class="detail-item-custom">
+                            <i data-lucide="map-pin" class="text-emerald-500"></i>
+                            <div>
+                                <span class="detail-label font-mono">Location</span>
+                                <span class="detail-val">Noida, Uttar Pradesh, India</span>
+                            </div>
+                        </div>
+                        <div class="detail-item-custom">
+                            <i data-lucide="linkedin" class="text-emerald-500"></i>
+                            <div>
+                                <span class="detail-label font-mono">LinkedIn</span>
+                                <a href="https://linkedin.com/in/ayushi-singh-5813ab215" target="_blank" class="detail-val">ayushi-singh-5813ab215</a>
+                            </div>
+                        </div>
+                        <div class="detail-item-custom">
+                            <i data-lucide="github" class="text-emerald-500"></i>
+                            <div>
+                                <span class="detail-label font-mono">GitHub</span>
+                                <a href="https://github.com/Ayushisingh1120" target="_blank" class="detail-val">github.com/Ayushisingh1120</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-right-form reveal-on-scroll reveal-delay-200">
+                    <form id="contactForm" class="custom-form">
+                        <div class="form-row-two">
+                            <div class="form-group-custom">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group-custom">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group-custom">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Opportunity / Collaboration" required>
+                        </div>
+                        <div class="form-group-custom">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your role or project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="formSubmit">
+                            <span>Send Message</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                        <div id="formFeedback" class="form-feedback-custom hidden"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="section-container footer-content-custom font-mono text-xs">
+            <p>&copy; 2026 Ayushi Singh. Built with precision & clean code.</p>
+            <div class="footer-social-links">
+                <a href="https://github.com/Ayushisingh1120" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/ayushi-singh-5813ab215" target="_blank">LinkedIn</a>
+                <a href="mailto:777ayushisingh@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Command Palette Overlay Modal -->
+    <div class="cmd-palette-overlay" id="cmdOverlay">
+        <div class="cmd-palette-box">
+            <div class="cmd-palette-header">
+                <i data-lucide="search" class="text-slate-500"></i>
+                <input type="text" id="cmdSearchInput" class="cmd-search-input" placeholder="Type a section name or command...">
+                <kbd class="kbd-esc">ESC</kbd>
+            </div>
+            <div class="cmd-palette-body">
+                <div class="cmd-section-title font-mono">Navigation Links</div>
+                <div class="cmd-list" id="cmdNavList">
+                    <div class="cmd-item" data-action="#about">
+                        <i data-lucide="home"></i>
+                        <span>Go to Home</span>
+                        <kbd class="kbd-action">Enter</kbd>
+                    </div>
+                    <div class="cmd-item" data-action="#resume">
+                        <i data-lucide="file-text"></i>
+                        <span>Go to Resume / CV</span>
+                        <kbd class="kbd-action">Enter</kbd>
+                    </div>
+                    <div class="cmd-item" data-action="#experience">
+                        <i data-lucide="graduation-cap"></i>
+                        <span>Go to Education & Leadership</span>
+                        <kbd class="kbd-action">Enter</kbd>
+                    </div>
+                    <div class="cmd-item" data-action="#projects">
+                        <i data-lucide="folder-git-2"></i>
+                        <span>Go to Projects Showcase</span>
+                        <kbd class="kbd-action">Enter</kbd>
+                    </div>
+                    <div class="cmd-item" data-action="#skills">
+                        <i data-lucide="cpu"></i>
+                        <span>Go to Skills Stacks</span>
+                        <kbd class="kbd-action">Enter</kbd>
+                    </div>
+                    <div class="cmd-item" data-action="#contact">
+                        <i data-lucide="send"></i>
+                        <span>Go to Contact Page</span>
+                        <kbd class="kbd-action">Enter</kbd>
+                    </div>
+                </div>
+                
+                <div class="cmd-section-title font-mono mt-3">Shortcuts</div>
+                <div class="cmd-list">
+                    <div class="cmd-item" data-action="toggle-theme">
+                        <i data-lucide="sun"></i>
+                        <span>Toggle Light/Dark Theme</span>
+                        <kbd class="kbd-action">Enter</kbd>
+                    </div>
+                    <div class="cmd-item" data-action="mail-to">
+                        <i data-lucide="mail"></i>
+                        <span>Email Ayushi</span>
+                        <kbd class="kbd-action">Enter</kbd>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lucide Icon CDN & Custom Script -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
